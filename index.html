@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+    
+    <!-- Weather Card -->
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="false" id="city-input">
+            <button onclick="getWeather()">
+                <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Search">
+            </button>
+        </div>
+        <div class="weather">
+            <img src="https://img.icons8.com/ios/100/000000/partly-cloudy-day--v1.png" alt="weather-icon" class="weather-icon" id="weather-icon">
+            <h1 class="temp" id="temperature">--°C</h1>
+            <h2 class="city" id="city-name">City Name</h2>
+            <div class="details">
+                <div class="col1">
+                    <img src="https://img.icons8.com/ios/50/000000/humidity.png" alt="humidity-icon">
+                    <div>
+                        <p class="humidity" id="humidity">--%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col1">
+                    <img src="https://img.icons8.com/ios/50/000000/wind.png" alt="wind-icon">
+                    <div>
+                        <p class="wind" id="wind-speed">-- km/hr</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
